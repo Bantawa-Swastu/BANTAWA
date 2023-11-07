@@ -1,0 +1,187 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="webthemez.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing page</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}"> 
+<link href="{% static 'jPlayer-2.9.2/dist/skin/pink.flag/css/jplayer.pink.flag.min.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-icon.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+<link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- header section -->
+<section class="banner" role="banner" id="banner">
+  <header id="header">
+    <div class="header-content clearfix"><span class="logo"><a href="/index.html">Event<b>System</b></a></span>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+		  <li><a href="#banner">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#teams">Our Team</a></li> 
+          <li><a href="/signup">SignUp</a></li>
+          <li><a href="/signin">SignIn</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10">
+      <div class="banner-text text-center">
+        <h1>Event System</h1>
+        <p>Keep event planning in one organized place.</p> 
+		  <div class="countdown styled"></div>
+	  </div>
+    <!-- banner text --> 
+  </div>
+  </div>
+</section>
+
+<!-- gallery section -->
+<section id="gallery" class="gallery section">
+  <div class="container-fluid">
+    <div class="section-header">
+                <h2 class="wow fadeInDown animated">Gallery</h2>
+                <p class="wow fadeInDown animated">Some collections of our photos.</p>
+            </div>
+    <div class="row no-gutter">
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/11.jpg' %}" class="work-box"> <img src="{% static 'images/portfolio/11.jpg' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+             <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/11.jpg' %}" class="work-box"> <img src="{% static 'images/portfolio/11.jpg' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/16.webp' %}" class="work-box"> <img src="{% static 'images/portfolio/16.webp' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/13.webp' %}" class="work-box"> <img src="{% static 'images/portfolio/13.webp' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption"> 
+            <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/14.webp' %}" class="work-box"> <img src="{% static 'images/portfolio/14.webp' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/15.webp' %}" class="work-box"> <img src="{% static 'images/portfolio/15.webp' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/16.webp' %}" class="work-box"> <img src="{% static 'images/portfolio/16.webp' %}" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <p><span class="icon icon-magnifying-glass"></span></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="{% static 'images/portfolio/09.webp' %}" class="work-box"> <img src="{% static 'images/portfolio/09.webp' %}" alt="">
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+    </div>
+  </div>
+</section>
+<!-- gallery section --> 
+
+
+
+<!-- our team section -->
+<section id="teams" class="section teams">
+  <div class="container">
+      <div class="section-header">
+                <h2 class="wow fadeInDown animated">Our Gang</h2>
+                <p class="wow fadeInDown animated">TEAM MEMBERS</p>
+            </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="person"><img src="{% static 'images/a.JPG' %}" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Poonam Tamang</h4>
+            <h5 class="role">Founder</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="person"> <img src="{% static 'images/B.JPG' %}" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Laxman Sanjel</h4>
+            <h5 class="role">Manager</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="person"> <img src="{% static 'images/c.JPG' %}" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Sagar Rasaily</h4>
+            <h5 class="role">DJ</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="person"> <img src="{% static 'images/d.JPG' %}" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Dixit Giri</h4>
+            <h5 class="role">Singler</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- our team section --> 
+
+<!-- Footer section -->
+<footer class="footer">
+<div class="container-fluid">
+<div>
+    <p>footer</p>
+</div>
+</footer>
+
+</body>
+
+</html>

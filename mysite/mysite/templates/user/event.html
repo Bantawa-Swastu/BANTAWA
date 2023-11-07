@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Venue</title>
+</head>
+    <!--link of bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+<body>
+     <div class="container">
+        <form action="{% url 'booking_event' %}" method="post">
+            {% csrf_token %}
+            <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Booking Form</div>
+                            <div class="panel-body">
+                                <div class="form-group clearfix">
+                                    <label for="name" class="col-md-4 control-label text-right">Name:</label>
+                                        <div class="col-md-6">
+                                            <input name="name" placeholder="Username" type="text" class="form-control" />
+                                        </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <label for="phone" class="col-md-4 control-label text-right">Contact:</label>
+                                        <div class="col-md-6">
+                                            <input name="phone" placeholder="98********" type="text" class="form-control" />
+                                        </div>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                    <label class="form-label" class="col-md-4 control-label text-right">Category:   
+                                        <select id="category" name="category">
+                                            <option value="Birthday Party">Birthday Party</option>
+                                            <option value="Seminar">Seminar</option>
+                                            <option value="Engagement">Engagement</option>
+                                            <option value="Marriage">Marriage</option>
+                                            <option value="Marriage Reception">Marriage Reception</option>
+                                        </select>
+                                    </label>
+                                </div>
+                  
+                                <div class="form-group clearfix">
+                                    <label class="form-label" class="Dropdown">Venue:
+                                        <select id="venue" name="venue">
+                                            <option value="Bhadrapur">Bhadrapur</option>
+                                            <option value="Birtamode">Birtamode</option>
+                                            <option value="Buddhashanti">Buddhashanti</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                   <label for="username" name="date" class="col-md-4 control-label text-right">Date:</label>
+                                        <div class="col-md-6">
+                                            <input name="date" value="date" type="date" class="form-control" required/>
+                                        </div>
+                                </div>
+
+                                <div class="form-group clearfix">
+                                    <label for="" class="col-md-4 control-label text-right">Guest:</label>
+                                        <div class="col-md-6">
+                                            <input name="guest" value="username" type="number" class="form-control" required/>
+                                        </div>
+                                </div>
+
+                                <!--equipment>
+                                <div class="form-group clearfix">
+                                    <label class="form-label">Equipment:
+                                        <input class="form-check-input" type="checkbox" name="equipment" id="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">Mike Speaker</label>
+
+                                        <input class="form-check-input" type="checkbox" name="equipment" id="checked">
+                                        <label class="form-check-label" for="flexCheckChecked">Stage</label>
+                                    </label>
+                                </div-->
+
+                                <!--div class="form-group clearfix">
+                                    <label class="form-label">Food:</label>
+                                        <input class="form-check-input" type="checkbox" name="food" value="" id="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">Break Fast</label>
+
+                                        <input class="form-check-input" type="checkbox" name="food" value="" id="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">Lunch</label>
+
+                                        <input class="form-check-input" type="checkbox" name="food" value="" id="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">Dinner</label>
+                                    </label-->
+                                    <!--div>
+                                        <input type="radio" id="veg" name="veg">
+                                        <label class="form-label">Vegetarian</label>
+                                
+                                        <input type="radio" id="non" name="non_veg">
+                                        <label class="form-label">Non-Vegetarian</label>
+                                    </div-->
+                                </div>
+         
+                                <!--div class="form-group clearfix">
+                                    <label class="form-label">Decoration:</label>
+                                        <input class="form-check-input" type="checkbox" value="" name="decoration" id="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">Flowering</label>
+
+                                        <input class="form-check-input" type="checkbox" value="" name="decoration" id="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">Lighting</label>
+                                </div-->
+
+                                <!-- Submit button -->
+                                <div class="col-md-6 col-md-offset-4">
+                                    <input name="Edit" type="Edit" value="Edit" class="btn btn-primary" /> 
+                                    <button type="submit">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

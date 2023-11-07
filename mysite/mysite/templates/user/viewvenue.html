@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Details</title>
+    <style>
+        table {
+            border: 1px solid #000; 
+            border-collapse: collapse; 
+        }
+
+        th, td {
+            border: 1px solid #000; 
+            padding: 8px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Total Venue</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Venue Name</th>
+                <th>Address</th>
+                <th>Capacity</th>
+                <th>Images</th>
+                <th>Total Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for item in view %}
+            <tr>
+              <td>{{forloop.counter}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.address}}</td>
+              <td>{{item.capacity}}</td>
+              <td><img src="{{item.images.url}}" height="100px",width="100px"></td>
+              <td>{{item.cost}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>   
+</body>
+</html>
